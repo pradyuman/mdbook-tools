@@ -1,0 +1,16 @@
+# Alerts
+
+> [!NOTE]
+> A note.
+
+> [!TIP]
+> A tip.
+
+> [!IMPORTANT]
+> Something important.
+
+> [!WARNING]
+> A warning.
+
+> [!CAUTION]
+> A caution.

@@ -1,0 +1,79 @@
+.hljs {
+  display: block;
+  overflow-x: auto;
+  color: var(--palette-fg);
+  background: var(--palette-surface);
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: var(--palette-muted);
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-name {
+  color: var(--palette-blue);
+}
+
+.hljs-string,
+.hljs-regexp,
+.hljs-addition {
+  color: var(--palette-green);
+}
+
+.hljs-attr,
+.hljs-attribute,
+.hljs-selector-class,
+.hljs-selector-id,
+.hljs-property,
+.hljs-params {
+  color: var(--palette-violet);
+}
+
+.hljs-variable,
+.hljs-template-variable {
+  color: var(--palette-violet-light);
+}
+
+.hljs-built_in,
+.hljs-title,
+.hljs-function,
+.hljs-section {
+  color: var(--palette-orange);
+}
+
+.hljs-type,
+.hljs-operator,
+.hljs-link {
+  color: var(--palette-sand);
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-meta,
+.hljs-subst,
+.hljs-char.escape_ {
+  color: var(--palette-salmon);
+}
+
+.hljs-literal {
+  color: var(--palette-violet-muted);
+}
+
+.hljs-addition {
+  background-color: color-mix(in srgb, var(--palette-green) 15%, transparent);
+}
+
+.hljs-deletion {
+  color: var(--palette-red);
+  background-color: color-mix(in srgb, var(--palette-red) 15%, transparent);
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}

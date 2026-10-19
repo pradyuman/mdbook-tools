@@ -1,0 +1,20 @@
+:root {
+  --body-font:
+    "Atkinson Hyperlegible Next", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --mono-font: "Hasklig", ui-monospace, monospace;
+}
+
+html {
+  scrollbar-gutter: stable;
+  font-family: var(--body-font);
+}
+
+#mdbook-theme-toggle,
+#mdbook-sidebar-resize-handle {
+  display: none;
+}
+
+.nav-wrapper,
+.nav-wide-wrapper {
+  display: none !important;
+}

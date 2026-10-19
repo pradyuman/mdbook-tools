@@ -1,0 +1,19 @@
+:root {
+  --palette-bg: #171717;
+  --palette-surface: #1d1d1d;
+  --palette-elevated: #2f2f2f;
+  --palette-border: #433f4f;
+  --palette-muted: #7a7e7e;
+  --palette-fg: #bbbbbb;
+
+  --palette-red: #e2434c;
+  --palette-salmon: #f28b86;
+  --palette-orange: #ea9847;
+  --palette-yellow: #e0d063;
+  --palette-sand: #c7b299;
+  --palette-green: #86b187;
+  --palette-blue: #8db8de;
+  --palette-violet: #bf93c3;
+  --palette-violet-light: #cdb0d0;
+  --palette-violet-muted: #7d7395;
+}

@@ -1,0 +1,15 @@
+[build]
+create-missing = false
+
+[output.html]
+additional-css = [
+  "theme/palette.css",
+  "theme/colors.css",
+  "theme/content.css",
+  "theme/layout.css",
+]
+no-section-label = true
+smart-punctuation = true
+
+[output.html.print]
+enable = false

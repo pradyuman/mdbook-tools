@@ -1,0 +1,78 @@
+/**
+ * The palette mapped onto mdBook's theme variables. Loading after mdBook's CSS, :root takes
+ * precedence over every theme class, and html:not(.js) over mdBook's rule for pages without
+ * JavaScript.
+ */
+:root,
+html:not(.js) {
+  --bg: var(--palette-bg);
+  --fg: var(--palette-fg);
+
+  --sidebar-bg: var(--palette-surface);
+  --sidebar-fg: var(--palette-fg);
+  --sidebar-non-existant: var(--palette-muted);
+  --sidebar-active: var(--palette-sand);
+  --sidebar-spacer: var(--palette-elevated);
+
+  --scrollbar: var(--palette-muted);
+
+  --icons: var(--palette-muted);
+  --icons-hover: var(--palette-fg);
+
+  --links: var(--palette-sand);
+
+  --inline-code-color: var(--palette-violet);
+
+  --theme-popup-bg: var(--palette-surface);
+  --theme-popup-border: var(--palette-border);
+  --theme-hover: var(--palette-elevated);
+
+  --quote-bg: var(--palette-surface);
+  --quote-border: var(--palette-border);
+
+  --warning-border: var(--palette-orange);
+
+  --table-border-color: var(--palette-elevated);
+  --table-header-bg: var(--palette-elevated);
+  --table-alternate-bg: var(--palette-surface);
+
+  --searchbar-border-color: var(--palette-border);
+  --searchbar-bg: var(--palette-surface);
+  --searchbar-fg: var(--palette-fg);
+  --searchbar-shadow-color: transparent;
+  --searchresults-header-fg: var(--palette-muted);
+  --searchresults-border-color: var(--palette-border);
+  --searchresults-li-bg: var(--palette-elevated);
+  --search-mark-bg: var(--palette-yellow);
+
+  --color-scheme: dark;
+
+  /* Stops mdBook's filters from tinting the copy icon mask in content.css */
+  --copy-button-filter: none;
+  --copy-button-filter-hover: none;
+
+  --footnote-highlight: var(--palette-sand);
+
+  --overlay-bg: color-mix(in srgb, var(--palette-bg) 60%, transparent);
+
+  --blockquote-note-color: var(--palette-blue);
+  --blockquote-tip-color: var(--palette-green);
+  --blockquote-important-color: var(--palette-violet);
+  --blockquote-warning-color: var(--palette-orange);
+  --blockquote-caution-color: var(--palette-red);
+
+  --sidebar-header-border-color: var(--palette-border);
+}
+
+::selection {
+  background: var(--palette-elevated);
+}
+
+mark {
+  color: var(--palette-bg);
+}
+
+hr {
+  border: none;
+  border-block-start: 1px solid var(--palette-border);
+}

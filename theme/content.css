@@ -1,0 +1,97 @@
+/* Table */
+
+.content table {
+  overflow: hidden;
+  border-spacing: 0;
+  border-collapse: separate;
+  border: 1px solid var(--table-border-color);
+  border-radius: 8px;
+}
+
+.content table td {
+  border-width: 1px 0 0;
+}
+
+.content table td + td {
+  border-inline-start-width: 1px;
+}
+
+/* Lighten inline code in tables so it stands out against striped rows */
+.content table code {
+  background: var(--palette-elevated);
+}
+
+/* Alert */
+
+/* Draw alert bars as pills */
+.blockquote-tag {
+  position: relative;
+  padding-inline-start: 24px;
+  border-inline-start-style: none;
+}
+
+.blockquote-tag::before {
+  position: absolute;
+  inset-block: 0;
+  inset-inline-start: 0;
+  content: "";
+  border-inline-start: 4px solid;
+  border-inline-start-color: inherit;
+  border-radius: 2px;
+}
+
+/* Code block */
+
+.content pre > code {
+  border-radius: 8px;
+}
+
+/* Hide mdBook's default button border and background */
+pre > .buttons button,
+pre > .buttons button:hover {
+  outline: none;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+pre > .buttons button.clip-button {
+  position: relative;
+  padding-inline: 6px;
+}
+
+/* Fix mdBook's copy button tap target on touch screens */
+@media (pointer: coarse) {
+  pre > .buttons button.clip-button {
+    padding: 0.3rem 1rem;
+  }
+}
+
+/* Replace mdBook's clipboard image with the copy icon from Octicons v19.40.0 (MIT license) */
+pre > .buttons button.clip-button::before {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  content: "";
+  background-color: var(--icons);
+  mask:
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"/><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"/></svg>')
+    center / contain no-repeat;
+}
+
+pre > .buttons button.clip-button:hover::before,
+pre > .buttons button.clip-button:focus-visible::before {
+  background-color: var(--sidebar-active);
+}
+
+pre > .buttons .tooltiptext {
+  top: 50%;
+  right: calc(100% + 4px);
+  left: auto;
+  margin: 0;
+  font-family: var(--body-font);
+  font-size: 1.4rem;
+  font-style: normal;
+  color: var(--palette-fg);
+  background-color: var(--palette-elevated);
+  transform: translateY(-50%);
+}

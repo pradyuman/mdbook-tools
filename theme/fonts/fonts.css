@@ -1,0 +1,44 @@
+/**
+ * Atkinson Hyperlegible Next and Hasklig are licensed under the SIL Open Font License 1.1.
+ * See https://openfontlicense.org
+ */
+
+@font-face {
+  font-family: "Atkinson Hyperlegible Next";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url('{{ resource "fonts/AtkinsonHyperlegibleNext.woff2" }}') format("woff2");
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible Next";
+  font-style: italic;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url('{{ resource "fonts/AtkinsonHyperlegibleNext-Italic.woff2" }}') format("woff2");
+}
+
+@font-face {
+  font-family: "Hasklig";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('{{ resource "fonts/Hasklig-Regular.woff2" }}') format("woff2");
+}
+
+@font-face {
+  font-family: "Hasklig";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('{{ resource "fonts/Hasklig-It.woff2" }}') format("woff2");
+}
+
+@font-face {
+  font-family: "Hasklig";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('{{ resource "fonts/Hasklig-Semibold.woff2" }}') format("woff2");
+}
