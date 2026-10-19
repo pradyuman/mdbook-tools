@@ -1,7 +1,10 @@
+/* Page */
+
 :root {
   --body-font:
     "Atkinson Hyperlegible Next", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   --mono-font: "Hasklig", ui-monospace, monospace;
+  --sidebar-target-width: 270px;
 }
 
 html {
@@ -17,4 +20,43 @@ html {
 .nav-wrapper,
 .nav-wide-wrapper {
   display: none !important;
+}
+
+/* Sidebar */
+
+.sidebar .sidebar-scrollbox,
+.sidebar-iframe-inner {
+  padding: 8px 16px 16px 28px;
+}
+
+.sidebar-iframe-inner {
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.sidebar-iframe-outer {
+  width: 100%;
+}
+
+.chapter li.chapter-item,
+.chapter li.header-item {
+  margin-block: 0;
+  line-height: 2.1;
+}
+
+.on-this-page {
+  position: relative;
+  padding-inline-start: 18px;
+  margin-inline-start: 4px;
+  border-inline-start: none;
+}
+
+.on-this-page::before {
+  position: absolute;
+  inset-block: 0.3em;
+  inset-inline-start: 0;
+  width: 3px;
+  content: "";
+  background: var(--sidebar-header-border-color);
+  border-radius: 1.5px;
 }
